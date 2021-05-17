@@ -1,0 +1,30 @@
+{
+    "name": "dev-denner/slim-4-init",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Denner Fernandes",
+            "email": "dev.denner@outlook.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2 || ^8.0",
+        "php-di/php-di": "^6.3",
+        "selective/basepath": "^2.0",
+        "slim/psr7": "^1.4",
+        "slim/slim": "^4.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "config": {
+        "process-timeout": 0,
+        "sort-packages": true
+    },
+    "scripts": {
+        "start": "php -S localhost:8080 -t public"
+    }
+}
